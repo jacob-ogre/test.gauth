@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">
+  code {
+    white-space: pre;
+  }
+  </style>
+  <link rel="stylesheet" href="www/bootstrap.css" type="text/css" />
+</head>
+
+<body>
+  <div style="width:85%; padding-left:15%; padding-top:20px">
+    <h1 id="dynamic-recovery-plans">Dynamic Recovery Plans</h1>
+    <hr>
+    <p>The <a href="http://www.nmfs.noaa.gov/pr/laws/esa/text.htm">U.S. Endangered Species Act</a> directs the Fish and Wildlife Service (<a href="http://www.fws.gov">FWS</a>) and the National Marine Fisheries Service (<a href="http://www.nmfs.noaa.gov">NMFS</a>) to develop plans that guide the recovery of threatened and endangered species. All recovery plans to-date have been written and published on paper (or as PDFs), and have been rarely if ever updated. As of October 2016, <a href="https://cci-dev.org/working_papers/recovery_plan_analysis.html">half of all recovery plans are 19 years old or older</a>. These out-of-date, non-interactive plans limit recovery and limit our (collective) ability to integrate other regulatory aspects of the ESA, such as section 7 consultation, with recovery. FWS and NMFS recognize the need to update how recovery planning is done.</p>
+    <p><a href="http://www.defenders.org">Defenders of Wildlife</a> has been developing a variety of alternative approaches and platforms to modernize recovery plans. Each prototype is, at this time, based on the <a href="http://www.nmfs.noaa.gov/pr/pdfs/recovery/turtle_green_eastpacific.pdf">green sea turtle recovery plan</a>; below we briefly discuss and link to these alternatives. We have also written up a <a href="https://docs.google.com/document/d/1Z4l63uCoRxLOpHh1EdiPi1MCrx-dsak7Cl8rx7PVmwY/edit?usp=sharing">brief analysis</a> of the strengths and weaknesses of these different dynamic recovery plan types.
+      <hr />
+      <p>
+        <br>
+      </p>
+      <!--- WordPress_version -->
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h4><a href="https://chemydwp.cci-dev.org" style="color:white" target="_blank">WordPress Version</a></h4>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-3">
+              <p>A prototype dynamic recovery plan based on <a href="http://wordpress.org/" target="_blank">WordPress</a>. The layout of this version is most-similar to the Shiny version, but rich text editing, security, collaboration, and other features already developed.</p>
+            </div>
+            <div class="col-md-3">
+              <p><strong>PROS</strong></p>
+              <ul>
+                <li>WordPress is extremely well-developed and maintained (e.g., security, sharing)</li>
+                <li>Easy-to-navigate interface (flexible)</li>
+              </ul>
+              <p><strong>CONS</strong></p>
+              <ul>
+                <li>Some setup and maintenance required (but not much)</li>
+                <li>Graph embedding by <code>iframes</code>, but not direct</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <a href="https://chemydwp.cci-dev.org" style="color:white" target="_blank"><img src="www/WP_recplan.png" alt="WordPress recovery plan" width="100%" style="border:1px solid #cccccc"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- END_WORDPRESS_VERSION -->
+      <!--- Google_Docs_version -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4><a href="https://docs.google.com/document/d/1P6ro-E2ddDBfWv-ENv7pKMS3iQ978lQZxlon-ozC798/edit#heading=h.pey1zgnfxb24" target="_blank">Google Docs Version</a></h4>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-3">
+              <p>A dynamic recovery plan written using <a href="http://docs.google.com/">Google Docs</a>. The layout looks like a 'normal' document, but can be rapidly updated and can link directly to external resources.</p>
+            </div>
+            <div class="col-md-3">
+              <p><strong>PROS</strong></p>
+              <ul>
+                <li>Docs development and maintenance by Google; both FWS and NMFS use GSuite already</li>
+                <li>Security, sharing, collaboration, and other features already integrated</li>
+              </ul>
+              <p><strong>CONS</strong></p>
+              <ul>
+                <li>Not as flashy as some other options</li>
+                <li>No graph embedding (live links are suitable)</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <a href="https://docs.google.com/document/d/1P6ro-E2ddDBfWv-ENv7pKMS3iQ978lQZxlon-ozC798/edit#heading=h.pey1zgnfxb24" style="color:white" target="_blank"><img src="www/gdoc_recplan.png" alt="Google Doc recovery plan" width="100%" style="border:1px solid #cccccc"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- END_GDOC_VERSION -->
+      <!--- Shiny_version -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>
+<a href="https://cci-dev.org/shiny/open/dynamic-recovery/" target="_blank">Shiny App Version</a>
+</h4>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-3">
+              <p>An <em>early prototype</em> dynamic recovery plan written using <a href="http://shiny.rstudio.com/">Shiny</a> for <a href="https://cran.r-project.org/">R</a>. The layout is somewhat Wikipedia-esque, with tabs running along the top of the page. This prototype is a shell of a recovery plan: extensive 'back-end' work would need to be done to make this plan type fully functional.</p>
+            </div>
+            <div class="col-md-3">
+              <p><strong>PROS</strong></p>
+              <ul>
+                <li>Novel interface for recovery plans</li>
+                <li>Data-driven figures and tables integrate directly with the plan</li>
+              </ul>
+              <p><strong>CONS</strong></p>
+              <ul>
+                <li>Considerably higher development costs (see intro blurb)</li>
+                <li>Steeper learning curve for editing (once developed)</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <a href="https://cci-dev.org/shiny/open/dynamic-recovery/" target="_blank"><img src="www/shiny_recplan.png" alt="Shiny recovery plan" width="100%" style="border:1px solid #cccccc"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- END_SHINY_VERSION -->
+      <!--- Discourse_version -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>
+<a href="#">Discourse Version</a>
+</h4>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-3">
+              <span style='font-style:italic; font-weight:bold;'>
+                <p>DISCONTINUTED</p>
+                <p>We spun down the server with the Discource instance because it was very unlikely to be adopted for dynamic recovery plans and we didn't need to pay for the server.</p>
+              </span>
+              <p>A dynamic recovery plan built using <a href="http://discourse.org">Discourse</a>, which is a modern discussion board platform for &quot;civilized discussion.&quot; The layout is driven by categories and the time when edits are made, i.e., is different than what many people may be used to.</p>
+            </div>
+            <div class="col-md-3">
+              <p><strong>PROS</strong></p>
+              <ul>
+                <li>Novel, community-centric platform for recovery plans</li>
+                <li>Fully developed, including security and editing tools</li>
+              </ul>
+              <p><strong>CONS</strong></p>
+              <ul>
+                <li>Unfamiliar user interface, steeper learning curve for editing</li>
+                <li>Graph embedding by <code>iframes</code>, but not direct</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <a href="#"><img src="www/discourse_recplan.png" alt="Discourse recovery plan" width="100%" style="border:1px solid #cccccc"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- END_DISCOURSE_VERSION -->
+      <!--- GitBook_version -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>
+<a href="https://www.gitbook.com/book/jacob-ogre/gst_recovery/details" target="_blank">GitBook Version</a>
+</h4>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-3">
+              <p>A dynamic recovery plan built using <a href="http://www.gitbook.com">GitBook</a>. The layout is very &quot;book-like,&quot; organized into chapters and sections, paginated. Content version control with <a href="https://git-scm.com/">git</a>.</p>
+            </div>
+            <div class="col-md-3">
+              <p><strong>PROS</strong></p>
+              <ul>
+                <li>Somewhat familiar book-like interface</li>
+                <li>Fully developed, including security and editing tools</li>
+              </ul>
+              <p><strong>CONS</strong></p>
+              <ul>
+                <li>Unfamiliar user interface for editing and version control</li>
+                <li>Graph embedding by <code>iframes</code>, but not direct</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <p>
+                <a href="https://www.gitbook.com/book/jacob-ogre/gst_recovery/details" target="_blank"><img src="www/gitbook_recplan.png" alt="GitBook recovery plan" width="100%" style="border:1px solid #cccccc"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--- END_GITBOOK_VERSION -->
+      <hr>
+      <div>
+        <p>Contents <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">CC BY-NC-SA</a> <a href="http://www.defenders.org" target="_blank">Defenders of Wildlife, 2016</a></p>
+      </div>
+      <hr>
+  </div>
+</body>
+
+</html>

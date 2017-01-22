@@ -4,14 +4,24 @@ header <- dashboardHeader(disable = TRUE)
 sidebar <- dashboardSidebar(disable = TRUE)
 
 body <- dashboardBody(
-  fluidPage(style="padding:0px",
+  fluidPage(
+    theme = shinytheme("yeti"),
+    tags$head(
+      HTML("<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400'
+           rel='stylesheet' type='text/css'>")
+    ),
+    style="padding:0px",
     title = "test.gauth",
     windowTitle = "nil page",
-    fluidRow(style="background-color: #8a8a5c;
+    fluidRow(style="background-color: #000066;
                     color: white;
                     font-weight: bold;
                     padding: 5px;
-                    margin-top: -15px",
+                    position: fixed;
+                    top: 15px;
+                    width: 100%;
+                    margin-top: -15px;
+                    z-index: 100",
       column(2,
         h4(style="color:white",
            textOutput("display_username"))
